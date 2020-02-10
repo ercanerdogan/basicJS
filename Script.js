@@ -222,3 +222,44 @@
 // }
 
 // console.log(`sum of all arguments : ${sumAll(10,20,30,32,40,13)}`);
+
+
+//window object usage....
+// let val=window.location;
+// console.log(val);
+// val=window.location.href;
+// console.log(val);
+// val=window.location.port;
+// console.log(val);
+// val=window.location.host;
+// console.log(val);
+// val=window.location.protocol;
+// console.log(val);
+// val=window.location.search;
+// console.log(val);
+// val=window.document;
+// console.log(val);
+
+
+// let val= document.querySelectorAll('li:nth-child(odd)');
+
+
+// // val.forEach(function(item){
+// //     item.style.background='#ccc';
+// // });
+let val;
+// let list=document.querySelectorAll('.list-group');
+// let list=document.getElementsByClassName('list-group');
+// console.log(list);
+
+list=document.getElementById('task-list');
+
+val=list.childNodes;
+console.log(val);
+
+val=list.children[0].nextSibling;
+console.log(val);
+
+
+val=list.parentNode;
+ console.log(val);
