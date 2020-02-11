@@ -246,20 +246,43 @@
 
 // // val.forEach(function(item){
 // //     item.style.background='#ccc';
-// // });
-let val;
-// let list=document.querySelectorAll('.list-group');
-// let list=document.getElementsByClassName('list-group');
-// console.log(list);
+// // // });
+// let val;
+// // let list=document.querySelectorAll('.list-group');
+// // let list=document.getElementsByClassName('list-group');
+// // console.log(list);
 
-list=document.getElementById('task-list');
+// list=document.getElementById('task-list');
 
-val=list.childNodes;
-console.log(val);
+// val=list.childNodes;
+// // console.log(val);
 
-val=list.children[0].nextSibling;
-console.log(val);
+// val=list.children[0].nextSibling;
+// // console.log(val);
 
 
-val=list.parentNode;
- console.log(val);
+// val=list.parentNode;
+// //  console.log(val);
+
+//  for(let i=0;i<list.childNodes.length;i++){
+//      if(list.childNodes[i].nodeType===1){
+//     console.log(list.childNodes[i]);
+// }
+//  }
+
+//  for(let i=0;i<list.childNodes.length;i++){
+//     if(list.childNodes[i].nodeType===3){
+//         console.log(list.childNodes[i]);
+//     }
+//  }
+
+const cardHeader = document.querySelector('.card-header');
+
+const h2 = document.createElement('h2');
+h2.setAttribute('class', 'card-header');
+h2.appendChild(document.createTextNode('My List'));
+
+const parent = document.getElementById('card');
+parent.replaceChild(h2, cardHeader);
+
+console.log(cardHeader);
