@@ -276,13 +276,31 @@
 //     }
 //  }
 
-const cardHeader = document.querySelector('.card-header');
+//dom manipulation replacechild, create element
+// const cardHeader = document.querySelector('.card-header');
 
-const h2 = document.createElement('h2');
-h2.setAttribute('class', 'card-header');
-h2.appendChild(document.createTextNode('My List'));
+// const h2 = document.createElement('h2');
+// h2.setAttribute('class', 'card-header');
+// h2.appendChild(document.createTextNode('My List'));
 
-const parent = document.getElementById('card');
-parent.replaceChild(h2, cardHeader);
+// const parent = document.getElementById('card');
+// parent.replaceChild(h2, cardHeader);
 
-console.log(cardHeader);
+// console.log(cardHeader);
+
+
+//event listener usage
+const btn=document.getElementById('btnDeleteAll');
+// btn.addEventListener('click', btnClick);
+
+
+// function btnClick(){
+//     console.log('button clicked');
+    
+// }
+
+btn.addEventListener('click', function(e){
+    console.log('btn clicked');
+    //when a href triggered, page wouldn't reload
+    e.preventDefault();
+})
