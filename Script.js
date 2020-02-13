@@ -289,18 +289,47 @@
 // console.log(cardHeader);
 
 
-//event listener usage
-const btn=document.getElementById('btnDeleteAll');
-// btn.addEventListener('click', btnClick);
+// //event listener usage
+// const btn=document.getElementById('btnDeleteAll');
+// // btn.addEventListener('click', btnClick);
 
 
-// function btnClick(){
-//     console.log('button clicked');
+// // function btnClick(){
+// //     console.log('button clicked');
     
-// }
+// // }
 
-btn.addEventListener('click', function(e){
-    console.log('btn clicked');
-    //when a href triggered, page wouldn't reload
-    e.preventDefault();
-})
+// btn.addEventListener('click', function(e){
+//     console.log('btn clicked');
+//     //when a href triggered, page wouldn't reload
+//     e.preventDefault();
+// })
+
+let val;
+
+//local storage usage
+const firstName = localStorage.setItem("firstName", "Ercan");
+const lastName = localStorage.setItem("lastName","Erdogan");
+let cars=['BMW', 'Mercedes', 'Toyota'];
+localStorage.setItem("cars", JSON.stringify(cars));
+
+val=localStorage.getItem("firstName");
+console.log(val);
+
+console.log(JSON.parse(localStorage.getItem("cars")));
+
+
+localStorage.removeItem("lastName");
+
+//clear all localStorage items.
+// localStorage.clear();
+
+console.log(localStorage);
+
+
+//session storage usage
+
+const city=sessionStorage.setItem("city","Izmir");
+const country=sessionStorage.setItem("country", "Türkiye");
+
+console.log(sessionStorage);
